@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Тесты с HTML</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    <section class="forms">
+        <h2>Работа с элементами form</h2>
+        <form action="#">
+            <p>Что проще?</p>
+            <select size="4" multiple>
+                <option value="js">JS</option>
+                <option value="css">CSS</option>
+                <option value="html">HTML</option>
+                <option value="idk">Не знаю</option>
+            </select>
+            <br>
+            <input list="myprojects">
+            <datalist id="myprojects">
+                <option value="FoodGame">
+                <option value="Space Game">
+                <option value="Магазин">
+            </datalist>
+            <br>
+            <p>Лучший язык программирования</p>
+            <label for="forms_radio_1">
+                <input type="radio" value="java" name="forms_langs" id="forms_radio_2">Java
+            </label><br>
+            <label for="forms_radio_2">
+                <input type="radio" value="processing" name="forms_langs" id="forms_radio_3">Processing
+            </label><br>
+            <label for="forms_radio_3">
+                <input type="radio" value="javascript" name="forms_langs" id="forms_radio_1">JS
+            </label><br>
+            <br>
+            <p>Хорошие языки программирования</p>
+            <label for="forms_checkbox_1">
+                <input type="checkbox" value="java" name="forms_langs" id="forms_checkbox_2">Java
+            </label><br>
+            <label for="forms_checkbox_2">
+                <input type="checkbox" value="processing" name="forms_langs" id="forms_checkbox_3">Processing
+            </label><br>
+            <label for="forms_checkbox_3">
+                <input type="checkbox" value="javascript" name="forms_langs" id="forms_checkbox_1">JS
+            </label><br>
+            <br>
+            <button disabled>Отправить</button>
+        </form>
+        <div class="storage_reset">
+            <p>Работа с хранилищем</p>
+            <button onclick="localStorage.clear();window.location.reload();">Очистить</button>
+            <br>
+        </div>
+    </section>
+
+    <section class="details">
+        <h2>Конструкция details</h2>
+        <details>
+            <summary>Информация</summary>
+            Суперважная информация: Данные, не очищающиеся при перезагрузке страницы браузера, наверняка хранятся в хранилище.
+        </details>
+    </section>
+
+    <section class="progress">
+        <h2>Конструкция progress</h2>
+        <progress max="100" value="0">
+        Полоса загрузки was an impostor</progress>
+        <br>
+        <button id="progress_go">Кнопка</button><t>Загрузка: 0%</t>
+    </section>
+
+    <section class="iframe">
+        <h2>IFrame</h2>
+        <iframe src="../ДЗ1/index.html" frameborder="0"></iframe>
+    </section>
+
+    <section class="css">
+        <h2>Работа со стилями</h2>
+        <h3>Свойство border-box</h3>
+        <div class="css_cont">
+            <p>Подопытный текст</p>
+        </div>
+        <h3>Псевдоэлементы</h3>
+        <div class="css_cont_2">
+            <div class="cont">1</div>
+            <div class="cont">2</div>
+            <div class="cont">3</div>
+        </div>
+        <div class="css_cont_3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque et facilis veniam esse consectetur, odit mollitia sed autem? Dignissimos, voluptatibus.
+            Molestiae eius magni, quo dicta impedit id amet est quod sit! Expedita.
+        </div>
+    </section>
+
+    
+    <section class="files">
+        <h2>Эксперимент №2 "Файлы"</h2>
+        <p>Кнопка должна запустить файл /experiment2/exp2.py</p>
+        <button id="files_do">Запуск</button>
+    </section>
+
+    <section class="space">
+        <h2>Пустое пространство</h2>
+        <div style="height: 300px;"></div>
+    </section>
+
+    <span style="color:darkgreen;cursor:default;">&Delta; - 916</span>
+
+    <script src="app.js"></script>
+</body>
+</html>
