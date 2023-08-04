@@ -80,11 +80,11 @@ button:hover {
 }
 
 .cont::before {
-    content: "😂";
+    content: "•";
 }
 
 .cont:hover::before {
-    content: "🤣";
+    content: "○";
 }
 
 .css_cont_3::first-line {

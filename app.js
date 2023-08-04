@@ -76,5 +76,5 @@ function init_prank() {
 }
 
 document.getElementById("files_do").onclick = () => {
-    open("experiment2/exp2.py")
+    open("experiment2/exp2.py");
 }
